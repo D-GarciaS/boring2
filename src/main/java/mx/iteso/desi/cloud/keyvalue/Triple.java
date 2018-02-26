@@ -110,5 +110,14 @@ public class Triple {
 	 */
 	public String[] getCollection() {
 		return contents;
+	
+	}
+
+	/**
+	 * To String Method
+	 */
+	public String toString(){
+		String res = "Triplet:\n0:" + contents[0] + "\n1:" + contents[1] + "\n2:" + contents[2] + "\n"; 
+		return res;
 	}
 }

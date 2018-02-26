@@ -16,8 +16,8 @@ public class Config {
 
   // The type of key/value store you are using. Initially set to BERKELEY;
   // will be changed to DynamoDB in some phases.
-  public static final KeyValueStoreFactory.STORETYPE storeType = KeyValueStoreFactory.STORETYPE.BERKELEY;
-  public static final String pathToDatabase = "c:/dbd";
+  public static final KeyValueStoreFactory.STORETYPE storeType = KeyValueStoreFactory.STORETYPE.DYNAMODB;
+  public static final String pathToDatabase = "/dbd";
     
   // Set to your Amazon REGION tu be used
   public static final Regions amazonRegion = Regions.US_WEST_2;
@@ -26,9 +26,9 @@ public class Config {
   // Restrict the topics that should be indexed. For example, when this is
   // set to 'X', you should only index topics that start with an X.
   // Set this to "A" for local work, and to "Ar" for cloud tests..
-  public static final String filter = "";
+  public static final String filter = "Ar";
   
-  public static final String titleFileName = "labels_en.ttl";
-  public static final String imageFileName = "images_en.ttl";
+  public static final String titleFileName = "dataset/labels_en.ttl";
+  public static final String imageFileName = "dataset/images_en.ttl";
     
 }

@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class MemStorage extends BasicKeyValueStore {
-	Map<String,List<String>> storage = new HashMap<>();
+	static Map<String,List<String>> storage = new HashMap<>();
 
 	@Override
 	public Set<String> get(String search) {
